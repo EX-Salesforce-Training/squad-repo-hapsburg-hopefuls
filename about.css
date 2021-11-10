@@ -1,0 +1,9 @@
+:root {
+    --dark-mode-background: rgb(56, 56, 56);
+    --dark-mode-text: rgb(243, 243, 243);
+}
+
+body {
+    background-color: var(--dark-mode-background);
+    color: var(--dark-mode-text);
+}
