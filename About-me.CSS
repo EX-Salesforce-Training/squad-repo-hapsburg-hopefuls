@@ -1,0 +1,35 @@
+body{
+    background-image: linear-gradient(blue, pink);
+    color: white;
+    align-items: center;
+}
+h1, article {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+
+.column-1 {
+    float: right;
+    width: 50%;
+  }
+
+ul{
+    font-size: 1.5em;
+    font-weight: 200;
+    font-family: Arial;
+}
+li{
+    font-size: 0.75em;
+} 
+
+span, p{
+    font-size: 1.25em;
+    font-family: Helvetica;
+}
+
+
+
