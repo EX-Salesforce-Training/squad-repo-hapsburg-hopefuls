@@ -1,65 +1,71 @@
 <html>
-<head>
-<title>All About Me - Christopher Eng's HTML Page</title>
-</head>
-<body>
-<article>
-  <section id="aboutMe">
+  <head>
+  <title>All About Me - Christopher Eng's HTML Page</title>
+  <link rel="stylesheet" type="text/css" href = "AboutMeStyle.css">
+  </head>
+  <body>
+  <article>
+    <section id="aboutMe">
       <h1>About Me</h1>
-    <img src=https://i.imgur.com/RbgKaaB.jpg width="300" height="375">
-    <p>My name is Christopher Eng, I'm a 23 year old man from Long Island who studied at the Rochester
-        Institute of Technology.<br> I have a Bachelors in Digital Humanities and Social Sciences and am currently
-        training at Revature to become a software engineer.
-    </p> <br><hr>
+      <img class="imagebox" src=https://i.imgur.com/RbgKaaB.jpg width="300" height="375">
+      <p>My name is Christopher Eng, I'm a 23 year old man from Long Island who studied at the Rochester
+          Institute of Technology.<br> I have a Bachelors in Digital Humanities and Social Sciences and am currently
+          training at Revature to become a software engineer.
+      </p> 
+      <br><hr>
     </section>
     <section id="hobbies">
-      <h3>What I enjoy doing (In order)</h3>
-    
-    <ol>
-        <li>Dungeons and Dragons</li>
-        <li>Game Development</li>
-        <li>Reading</li>
-    </ol><br><hr>
+      <div class="flex-container">
+        <div class="flex-child hobbies">
+          <h3>What I enjoy doing (In order)</h3>
+      
+          <ol>
+            <li>Dungeons and Dragons</li>
+            <li>Game Development</li>
+            <li>Reading</li>
+        </ol>
+        </div>
+        <div class="flex-child funFacts">
+          <h3>Fun Facts about Me</h3>
+          <ul>
+            <li>I was a <b>Game Development</b> Major originally.</li>
+            <li>I have a cat named Leo and a dog named Casper.</li>
+            <li>I <i>love</i> fantasy themes in general.</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section id="funFacts">
-      <h3>Fun Facts about Me</h3>
-    
-    <ul>
-        <li>I was a <b>Game Development</b> Major originally.</li>
-        <li>I have a cat named Leo and a dog named Casper.</li>
-        <li>I <i>love</i> fantasy themes in general.</li>
-    </ul>
-    </section>
+
     <section id="links">
-    <p>Here's a Link to my Git Repo: <a href="https://github.com/ChrisERev">Github.com/ChrisERev</a><br>
-     Here's a Link to my Trailhead: <a href="https://trailblazer.me/id/cmer">trailblazer.me/id/cmer</a></p>
-    <br><hr>
+      <p>Here's a Link to my Git Repo: <a href="https://github.com/ChrisERev">Github.com/ChrisERev</a><br>
+        Here's a Link to my Trailhead: <a href="https://trailblazer.me/id/cmer">trailblazer.me/id/cmer</a></p>
+        <br><hr>
     </section>
-    </article>
-    <section id="moreFavorites"> 
+  </article>
+  <section id="moreFavorites"> 
     <header>
       <h3>More of my Favorites</h3>
     </header>
-<table border=1px>
-    <thead>
-      <th>Favorite Games</th> <th>Favorite Books</th> <th>Favorite Shows</th>
-    </thead>
-    <tr>
-      <td>Pathfinder TTRPG</td>
-      <td>Eragon</td>
-      <td>The Owl House</td>
-    </tr>
-    <tr>
-      <td>FFXIV</td>
-      <td>Harry Potter</td>
-      <td>Saiki K</td>
-    </tr>
-    <tr>
+    <table class="center">
+      <thead>
+        <th>Favorite Games</th> <th>Favorite Books</th> <th>Favorite Shows</th>
+      </thead>
+      <tr>
+        <td>Pathfinder TTRPG</td>
+        <td>Eragon</td>
+        <td>The Owl House</td>
+      </tr>
+      <tr>
+        <td>FFXIV</td>
+        <td>Harry Potter</td>
+        <td>Saiki K</td>
+      </tr>
+      <tr>
         <td>Mario Party</td>
         <td>The Ranger's Apprentice</td>
         <td>Inside Job</td>
-    </tr>
-  </table>
+      </tr>
+    </table>
   </section>
-</body>
+  </body>
 </html>
