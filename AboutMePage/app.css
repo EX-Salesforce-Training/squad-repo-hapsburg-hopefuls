@@ -1,0 +1,34 @@
+body {
+    background-image: url("/Users/matthewlewandowski/Documents/hapsburgRepo/squad-repo-hapsburg-hopefuls/pictures/cool-background.png");
+}
+
+#mainView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    width: 40%;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hobbies {
+    display:flex;
+    flex-direction: column;
+}
+
+#accomplishments {
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+h1 {
+    font-size: 2em;
+}
