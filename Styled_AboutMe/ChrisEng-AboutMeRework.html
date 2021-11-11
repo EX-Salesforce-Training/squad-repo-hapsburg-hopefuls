@@ -67,5 +67,61 @@
       </tr>
     </table>
   </section>
+  <hr>  
+  <section id="calculator">
+    <h1>Calculator</h1>
+    <p>This is a Calculator that I made!</p>
+  
+    <input type="number" id="firstNumber" placeholder="0"> 
+    
+    <select name="operator" id="calcOperator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="x">x</option>
+      <option value="/">/</option>
+    </select>
+    
+    <input type="number" id="secondNumber" placeholder="0">
+     = 
+     <input type="text" id="result" placeholder="0" readonly="true">
+
+    <br>
+    <button type="button" id="calculateMath">Calculate</button>
+
+
+
+  </section>
   </body>
+
+
+
+  <script>
+      window.onload = function(){
+        document.querySelector("#calculateMath").addEventListener("click", calculate);
+      }
+
+      function calculate(){
+        var firstNum = parseInt(document.querySelector("#firstNumber").value);
+        var secondNum = parseInt(document.querySelector("#secondNumber").value);
+        var answer = 0
+
+        switch(document.querySelector("#calcOperator").value){
+          case "+":
+            answer = firstNum+secondNum;
+          break;
+          case "-":
+            answer = firstNum-secondNum;
+          break;
+          case "x":
+            answer = firstNum*secondNum;
+          break;
+          case "/":
+            answer = firstNum/secondNum;
+          break;
+          default: 
+            console.log("Math Failed");
+        }
+        document.querySelector("#result").value = answer;
+      }
+  </script>
 </html>
