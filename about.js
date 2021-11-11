@@ -16,6 +16,7 @@ window.onload = () => {
     for (operand of operands) {
         operand.addEventListener("click", inputOperand)
     }
+    document.querySelector("#clear-entry").addEventListener("click", inputClearEntry)
     document.querySelector("#clear").addEventListener("click", inputClear)
 }
 
@@ -26,26 +27,31 @@ function inputNumber(e) {
 
 function inputOperand(e) {
     e.preventDefault()
+    const sanitizedInput = input.value.replace(/[^\d.]/g, '') 
     if (clrOnNextInput) {
-        console.log("clear")
         expression.innerHTML = ""
         clrOnNextInput = false
     }
     const operand = e.target.innerHTML
-    if (input.value) {
-        expression.innerHTML += `${input.value}  `
-        input.value = ""
+    if (sanitizedInput) {
+        expression.innerHTML += `${sanitizedInput}  `
+        let result = ""
         if(operand === '=') {
-            expression.innerHTML = eval(expression.innerHTML)
+            result = eval(expression.innerHTML)
             clrOnNextInput = true
-        } else {
-            expression.innerHTML += `${operand} `
         }
+        expression.innerHTML += `${operand} ${result}`
     }
+    input.value = ""
 }
 
 function inputClear(e) {
     e.preventDefault()
     expression.innerHTML = ""
+    input.value = ""
+}
+
+function inputClearEntry(e) {
+    e.preventDefault()
     input.value = ""
 }

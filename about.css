@@ -9,6 +9,10 @@ body {
     color: var(--text-color);
 }
 
+#calc-input {
+    width: 100%;
+}
+
 a#sponsor-logo > img {
     max-height: 50px;
 }
