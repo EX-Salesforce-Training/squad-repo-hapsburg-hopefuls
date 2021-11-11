@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(blue, pink);
+    background-image: linear-gradient(pink,blue);
     color: white;
     align-items: center;
 }
@@ -7,15 +7,10 @@ h1, article {
     text-align: center;
 }
 
-.column {
-    float: left;
-    width: 50%;
-  }
-
-.column-1 {
-    float: right;
-    width: 50%;
-  }
+.body{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 ul{
     font-size: 1.5em;
@@ -30,6 +25,8 @@ span, p{
     font-size: 1.25em;
     font-family: Helvetica;
 }
+
+
 
 
 
