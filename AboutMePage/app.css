@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 40rem;
 }
 
 #content {
@@ -31,4 +32,41 @@ body {
 
 h1 {
     font-size: 2em;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 80%;
+    height: 50%;
+}
+
+#resultScreen { 
+    height: 20%;
+    width: 100%;
+    background-color: aqua;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(19, 201, 201);
+    width: 100%;
+    height: 100%;
+}
+
+.calcButton {
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    width: 20%;
+    height: 18%;
+}
+
+#result {
+    margin-top: 2.5rem;
+    padding-right: .5rem;
+    text-align: end;
+    font-size: 2rem;
 }
