@@ -6,6 +6,7 @@ let finalOperator;
 
 buttons.addEventListener('click', (evt) => {
     if (evt.target.id === "buttons") return;
+
     switch (evt.target.innerHTML) {
         case "+":
             setOperator("+")
@@ -22,6 +23,11 @@ buttons.addEventListener('click', (evt) => {
         case "=":
             calculate(result.innerHTML);
             break;
+        case "clear":
+            result.innerHTML = "0";
+            firstOperand = null;
+            operator = null;
+            break;
         default:
             if (finished) {
                 result.innerHTML = evt.target.innerHTML;
@@ -30,14 +36,12 @@ buttons.addEventListener('click', (evt) => {
                 if (result.innerHTML === "0") result.innerHTML = evt.target.innerHTML;
                 else result.innerHTML += evt.target.innerHTML;
             }
-
             break;
     }
 })
 
 function setOperator(operator) {
     firstOperand = parseFloat(result.innerHTML);
-    result.innerHTML = "0";
     finalOperator = operator;
 }
 
