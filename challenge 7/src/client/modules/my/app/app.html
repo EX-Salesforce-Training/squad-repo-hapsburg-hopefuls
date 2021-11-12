@@ -1,0 +1,16 @@
+<template>
+    <h1 div class="center">Pokedex</h1>
+    <div class="center">
+        <!-- See example 2 for prop drilling -->
+        <button onclick={prevPokemon}>Previous</button><button onclick={nextPokemon}>Next</button><br>
+            {currentPokemon.name}<br>
+            <img src={currentPokemon.img} /><br>
+            Types:<br>
+            <template for:each={currentPokemon.types} for:item="type">
+                <span key={type.id}>{type.name} </span>
+            </template>
+            <br>
+            Height: {currentPokemon.height}
+            Weight: {currentPokemon.weight}
+    </div>
+</template>
