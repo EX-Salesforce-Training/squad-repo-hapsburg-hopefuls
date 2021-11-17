@@ -1,0 +1,9 @@
+minimalist and focused design for domino's pizza
+streamline the customer experience to get as many people to interact with the page in exactly the way that we want.
+research project to see which customer flow is the most effective as currently domino's is very promo focused.
+instead of promos, implement free shipping over certain limits to incentivise larger orders
+
+google draw, figma - pick one
+
+examples:
+BIAO Sugar - bubble tea site with artificially limited supply.
