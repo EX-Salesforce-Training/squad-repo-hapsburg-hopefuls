@@ -1,0 +1,40 @@
+<template>
+	<!-- link tag not allowed?
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+	
+	<div class="topnav">
+		<img src="https://t4.ftcdn.net/jpg/03/10/99/43/360_F_310994319_2UDbmr1UT6oncu4Mid7Ezmp5Mz1qvEso.jpg"
+		width="55" height="55" class='logo'/>
+		<a href="#home">Home</a>
+		<a href="#menu">Menu</a>
+		<a href="#locations">Locations</a>
+	</div> -->
+
+	<div>
+		<c-nav nav={nav}></c-nav>
+	</div>
+
+	<div>
+		<c-menu menu={menu}></c-menu>
+	</div>
+
+	<div class='about'>
+		<div class='about-me-1'>
+			<h1>About B's Tea </h1>
+		</div>
+		<div class='about-me-2'>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur elit nulla, ornare tincidunt nibh
+				accumsan at. Nunc consequat dignissim nulla sit amet vulputate. Pellentesque habitant morbi tristique senectus
+				et
+			</p>
+		</div>
+	</div>
+
+	<div id='locations'>
+		<p>Leave us a review!</p>
+		<input type='text' id='review' size="50">
+	</div>
+
+</template>

@@ -1,0 +1,38 @@
+<template>
+  <div class='container'>
+    <img src = 'https://static.vecteezy.com/system/resources/thumbnails/001/349/601/small/bubble-tea-cups-in-splash-with-leaves-on-pink-free-vector.jpg'
+		alt="Bubble Tea"/>
+
+    <!-- lightning button for open modal window -->
+
+    <lightning-button label="Menu" title="Menu" onclick={openModal} class='btn'>
+    </lightning-button>
+  </div>
+
+  <!--Use template if:true to display/hide popup based on isModalOpen value-->
+  <template if:true={isModalOpen}>
+    <!-- Modal/Popup Box LWC starts here -->
+    <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large"
+      aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+      <div class="slds-modal__container">
+        <header class="slds-modal__header">
+          <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+					<svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+					<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+				</svg>
+					<span class="slds-assistive-text">Close</span>
+			</button>
+          <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Menu</h2>
+        </header>
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+          <img src='https://i.pinimg.com/600x315/f6/f3/a7/f6f3a7b008909de0c96aa36c8dcaa52d.jpg'>
+        </div>
+        <footer class="slds-modal__footer">
+          <button class="slds-button slds-button_brand" onclick={closeModal}>Got it!</button>
+        </footer>
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+
+</template>
