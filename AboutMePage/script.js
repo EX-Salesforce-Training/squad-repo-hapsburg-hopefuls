@@ -81,7 +81,6 @@ function handleNumbers(evt) {
             isOperating = false;
         } else result.innerHTML += evt.target.innerHTML;
     }
-
 }
 
 function reset() {
