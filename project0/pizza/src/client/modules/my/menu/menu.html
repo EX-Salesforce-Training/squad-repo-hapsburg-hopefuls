@@ -1,0 +1,8 @@
+<template>
+    <h2>Menu</h2>
+    <div class="menu-container">
+        <template for:each={items} for:item="item">
+            <my-menu-item key={item.id} item={item}></my-menu-item>
+        </template>
+    </div>
+</template>

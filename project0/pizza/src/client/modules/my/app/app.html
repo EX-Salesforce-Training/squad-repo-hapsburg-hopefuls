@@ -1,0 +1,12 @@
+<template>
+	<my-header-bar onnavigate={handleNavigate}></my-header-bar>
+
+	<main class="content">
+		<template if:true={isStateHome}>
+			<my-home onnavigate={handleNavigate}></my-home>
+		</template>
+		<template if:true={isStateMenu}>
+			<my-menu onnavigate={handleNavigate}></my-menu>
+		</template>
+	</main>
+</template>

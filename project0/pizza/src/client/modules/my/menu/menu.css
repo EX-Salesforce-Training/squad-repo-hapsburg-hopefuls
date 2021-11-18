@@ -1,0 +1,13 @@
+:host {
+  display:flex;
+  flex-flow: column wrap;
+    width: 100%;
+    padding: 2rem;
+    color: #080707;
+  }
+  .menu-container {
+    flex-wrap: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
