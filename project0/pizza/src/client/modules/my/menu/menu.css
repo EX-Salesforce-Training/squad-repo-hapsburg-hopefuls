@@ -6,8 +6,8 @@
     color: #080707;
   }
   .menu-container {
-    flex-wrap: row;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
   }

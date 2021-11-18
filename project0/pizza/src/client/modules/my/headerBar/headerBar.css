@@ -9,6 +9,8 @@ header {
 .header-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     width: 50vw;
     min-width: 400px;
 }

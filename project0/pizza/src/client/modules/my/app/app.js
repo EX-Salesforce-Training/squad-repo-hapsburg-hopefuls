@@ -4,7 +4,6 @@ export default class App extends LightningElement {
     state = 'home'
 
     handleNavigate(event) {
-        console.log('navigate event fired')
         this.state = event.detail.state
     }
 
