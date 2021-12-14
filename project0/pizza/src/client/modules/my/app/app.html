@@ -1,5 +1,7 @@
 <template>
-	<my-header-bar onnavigate={handleNavigate}></my-header-bar>
+    <my-header onnavigate={handleNavigation}></my-header>
+
+    <!-- <my-header-bar onnavigate={handleNavigate}></my-header-bar>
 
 	<main class="content">
 		<template if:true={isStateHome}>
@@ -9,4 +11,7 @@
 			<my-menu onnavigate={handleNavigate}></my-menu>
 		</template>
 	</main>
+	 -->
+    <div class="container" lwc:dom="manual" onnavigate={handleNavigation}></div>
+    <my-custom-footer></my-custom-footer>
 </template>

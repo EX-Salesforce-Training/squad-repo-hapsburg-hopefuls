@@ -3,36 +3,44 @@ import { LightningElement } from 'lwc'
 export default class Menu extends LightningElement {
     items = [
         {
-            id: "1",
-            name: "Pizza",
-            img: "resources/pizza.jpg"
+            id: "01t5f000000SqPmAAK",
+            name: "12\" Medium",
+            desc: "The classic round",
+            price: "$12",
+            img: "resources/pizza.jpg",
+            count: 0
         },
         {
-            id: "2",
+            id: "01t5f000000Szg4AAC",
             name: "Garlic Bread",
-            img: "resources/garlic-bread.jpg"
+            desc: "For garlic lovers only",
+            price: "$6",
+            img: "resources/garlic-bread.jpg",
+            count: 0
         },
         {
-            id: "3",
+            id: "01t5f000000SzfzAAC",
             name: "Pasta",
-            img: "resources/pasta.jpg"
+            desc: "All beef meatballs",
+            price: "$11",
+            img: "resources/pasta.jpg",
+            count: 0
         }
     ]
+
     connectedCallback() {
         // getSessions().then(result => {
         //     this.items = this.allItems = result
         // })
     }
 
-    handleSessionClick(event) {
-        const index = event.currentTarget.dataset.index
-        const navigateEvent = new CustomEvent('navigate', {
-            detail: {
-                state: 'details',
-                sessionId: this.items[index].id
+    handleChange(event) {
+        for (let i = 0; i < this.items.length; i++) {
+            if (this.items[i].id == event.detail.id) {
+                this.items[i].count = event.detail.count
+                break
             }
-        })
-        this.dispatchEvent(navigateEvent)
+        }
     }
 
 }

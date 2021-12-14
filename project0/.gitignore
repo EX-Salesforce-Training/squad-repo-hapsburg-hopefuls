@@ -30,3 +30,7 @@ $RECYCLE.BIN/
 
 # Husky
 .husky
+
+# ignore
+/pizza/src/assets
+/extra
