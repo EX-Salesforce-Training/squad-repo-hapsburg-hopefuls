@@ -1,0 +1,15 @@
+<template>
+	<lightning-card>
+		<div class="slds-var-p-horizontal_small">
+			<template if:true={isStateList}>
+				<c-session-list onnavigate={handleNavigate}></c-session-list>
+			</template>
+			<template if:true={isStateDetails}>
+				<c-session-details onnavigate={handleNavigate} session-id={sessionId}></c-session-details>
+			</template>
+			<template if:true={isStateEditor}>
+				<c-session-editor onnavigate={handleNavigate} session-id={sessionId}></c-session-editor>
+			</template>
+		</div>
+	</lightning-card>
+</template>
