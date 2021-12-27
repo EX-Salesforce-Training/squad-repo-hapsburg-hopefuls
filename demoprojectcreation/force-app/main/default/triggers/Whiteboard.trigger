@@ -1,6 +1,6 @@
 trigger Whiteboard on Contact (before insert) {
-	// loop through new contacts and add fields to collections
-	String[] newNames = new String[0];
+    // loop through new contacts and add fields to collections
+    String[] newNames = new String[0];
     String[] newPhones = new String[0];
     String[] newEmails = new String[0];
     for (Contact newContact : trigger.new) {

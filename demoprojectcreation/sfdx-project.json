@@ -3,13 +3,6 @@
         {
             "path": "force-app",
             "default": true
-        },
-        {
-            "path": "dependent",
-            "package": "dependent",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
-            "default": false
         }
     ],
     "name": "demoprojectcreation",
@@ -17,6 +10,5 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "52.0",
     "packageAliases": {
-        "dependent": "0Ho5f000000Kz7HCAS"
     }
 }
