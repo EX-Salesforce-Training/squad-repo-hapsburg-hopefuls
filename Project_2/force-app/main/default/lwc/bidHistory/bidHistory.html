@@ -1,0 +1,30 @@
+<template>
+		<lightning-card title="Auction">
+			<div class="slds-m-horizontal_medium">
+				<lightning-record-view-form
+        record-id="a005f000006jPdtAAE"
+        object-api-name="Auction__c">
+            <lightning-output-field field-name="Name"> </lightning-output-field>
+            <lightning-output-field field-name="Auction_Title__c"></lightning-output-field>
+						<lightning-output-field field-name="Minimum_Bid__c"></lightning-output-field>
+						<lightning-output-field field-name="Shipping_Cost__c"></lightning-output-field>
+    </lightning-record-view-form>
+			</div>
+			<div class="slds-m-horizontal_medium">
+				<lightning-layout horizontal-align="center">
+					<lightning-layout-item padding="around-small">
+						<lightning-button label="Bid History" title="BidHistory" onclick={fetchBidHistory} class="slds-m-left_x-small"></lightning-button>
+					</lightning-layout-item>
+				</lightning-layout>
+			</div>
+					<!--<div class="slds-m-horizontal_medium">
+					
+					<lightning-input type="number" name="input1" label="Place your Bid" ></lightning-input>
+					
+			</div>
+				
+	-->
+		</lightning-card>
+	
+			
+	</template>
