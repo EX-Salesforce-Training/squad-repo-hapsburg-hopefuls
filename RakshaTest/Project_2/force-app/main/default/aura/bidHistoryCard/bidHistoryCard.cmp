@@ -1,0 +1,13 @@
+<aura:component controller="BidHistoryController" implements="force:hasRecordId,flexipage:availableForAllPageTypes" access="global">
+    <lightning:messageChannel type="SampleMessageChannel__c" onMessage="{!c.handleMessage}" scope="APPLICATION" />
+
+    
+
+    <lightning:card title="BidHistory">
+        <div class="slds-var-p-around_small">
+            {!v.recordId}
+        </div>
+    </lightning:card>
+
+
+</aura:component>
